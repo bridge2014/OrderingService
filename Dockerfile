@@ -39,7 +39,7 @@ RUN npm install -g forever
 
 WORKDIR /root
 COPY run.sh /root/
-
+COPY redis.conf /etc/redis/redis.conf
 CMD ["sh", "run.sh"]
 
 #RUN forever start /root/OrderingService/node_modules/kue/bin/kue-dashboardai
