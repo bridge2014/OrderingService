@@ -3,7 +3,7 @@ Ordering service for camicroscope. Used by Dynamic Services etc. Contains Kue an
 
 
 # Install
-docker build -t camicroscope_jobs .
+`docker build -t camicroscope_jobs .`
 
 # Run
-docker run -itd camicroscope_jobs
+`docker run -itd camicroscope_jobs`
