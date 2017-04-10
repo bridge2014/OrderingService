@@ -6,7 +6,7 @@ services:
   - docker
   
 before_install:
-- docker build -t camicroscope_viewer . 
-- docker run -itd -v $(pwd)/html:/var/www/html -p 3000:80 camicroscope_viewer
+- docker build -t camicroscope_jobs . 
+- docker run -itd camicroscope_jobs
 script:
-- docker ps | grep -q viewer
+- docker ps | grep -q jobs
