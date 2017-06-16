@@ -3,7 +3,7 @@
 	# Redis
 
 
-FROM     ubuntu:14.04
+FROM     node:latest
 MAINTAINER Ganesh Iyer "lastlegion@gmail.com"
 
 
@@ -15,7 +15,7 @@ RUN apt-get -q -y dist-upgrade
 
 RUN apt-get -y install redis-server
 
-RUN apt-get -y install nodejs npm
+
 
 RUN npm install yargs   #Annoying unlisted kue dependency
 
