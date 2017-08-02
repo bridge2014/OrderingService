@@ -3,7 +3,7 @@
 	# Redis
 
 
-FROM     node:latest
+FROM     ubuntu:16.04
 MAINTAINER Ganesh Iyer "lastlegion@gmail.com"
 
 
@@ -14,6 +14,9 @@ RUN apt-get -q -y dist-upgrade
 
 
 RUN apt-get -y install redis-server
+RUN apt-get -y install nodejs npm
+
+RUN  ln -s "$(which nodejs)" /usr/bin/node
 
 
 
@@ -32,7 +35,7 @@ WORKDIR /root/OrderingService
 
 RUN npm install 
 
-RUN  ln -s "$(which nodejs)" /usr/bin/node
+#RUN  ln -s "$(which nodejs)" /usr/bin/node
 
 RUN npm install -g forever
 
