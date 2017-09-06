@@ -30,7 +30,7 @@ WORKDIR /root/
 
 #WORKDIR /root/kue
 
-RUN git clone https://github.com/camicroscope/OrderingService.git
+RUN git clone -b release https://github.com/camicroscope/OrderingService.git
 WORKDIR /root/OrderingService
 
 RUN npm install 
