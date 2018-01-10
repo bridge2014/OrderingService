@@ -20,7 +20,7 @@ RUN  ln -s "$(which nodejs)" /usr/bin/node
 
 
 
-RUN npm install yargs   #Annoying unlisted kue dependency
+RUN npm install yargs   #Unlisted kue dependency
 
 RUN apt-get -y install git
 
