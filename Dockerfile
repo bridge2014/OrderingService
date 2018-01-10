@@ -17,7 +17,7 @@ RUN apt-get -y install redis-server
 
 
 
-RUN npm install yargs   #Annoying unlisted kue dependency
+RUN npm install yargs   #unlisted kue dependency
 
 RUN apt-get -y install git
 
