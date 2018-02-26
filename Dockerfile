@@ -20,7 +20,7 @@ RUN  ln -s "$(which nodejs)" /usr/bin/node
 
 
 
-RUN npm install yargs   #unlisted kue dependency
+RUN npm install yargs   #Unlisted kue dependency
 
 RUN apt-get -y install git
 
@@ -30,7 +30,7 @@ WORKDIR /root/
 
 #WORKDIR /root/kue
 
-RUN git clone -b release https://github.com/camicroscope/OrderingService.git
+RUN git clone https://github.com/camicroscope/OrderingService.git
 WORKDIR /root/OrderingService
 
 RUN npm install 
